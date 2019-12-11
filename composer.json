@@ -1,0 +1,36 @@
+{
+    "name": "adolfbagenda/africas_talking",
+    "type": "library",
+    "description": "A package for integrating Africa's Talking SMS gateway into a Laravel 6 App.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adolf",
+            "email": "bagenda.adolf@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+      "orchestra/testbench": "^4.3",
+      "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+             "adolfbagenda\\AfricasTalking\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "adolfbagenda\\AfricasTalking\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+      "laravel": {
+          "providers": [
+              "adolfbagenda\\AfricasTalking\\AfricasTalkingServiceProvider"
+          ]
+      }
+    },
+    "minimum-stability" : "dev"
+}
